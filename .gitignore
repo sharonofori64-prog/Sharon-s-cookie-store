@@ -1,34 +1,36 @@
-# Gradle files
-.gradle/
-build/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sharon's Cookie Shop 🍪</title>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <style>
+        body { font-family: 'Comic Sans MS', cursive; background: #fff5e6; text-align: center; }
+        .cookie-box { border: 5px solid #8d6e63; border-radius: 20px; padding: 20px; margin: 20px; background: white; display: inline-block; width: 300px; }
+        .price { color: green; font-size: 24px; font-weight: bold; }
+        .parent-section { background: #ffebee; padding: 10px; border: 1px dashed red; margin: 20px; font-size: 12px; }
+    </style>
+</head>
+<body>
 
-# Local configuration file (sdk path, etc)
-local.properties
+    <h1>🍪 Sharon's Sweet Treats 🍪</h1>
+    <p>Hand-baked with help from Harris!</p>
 
-# Log/OS Files
-*.log
+    <div class="cookie-box">
+        <h2>Double Chocolate Puddle</h2>
+        <p>So much chocolate you'll need a glass of milk!</p>
+        <div class="price">£2.50</div>
+        
+        <button onclick="alert('Ask your parent to help you finish the Stripe setup!')">Order Now</button>
+    </div>
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+    <div class="parent-section">
+        <strong>Parent Note:</strong> Sharon is 10. To make this button take real money, 
+        please create a Stripe Payment Link and paste the button code here.
+    </div>
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+    <footer>
+        <p>Contact us: <strong>sharonofori84@gmail.com</strong></p>
+    </footer>
 
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+</body>
+</html>
